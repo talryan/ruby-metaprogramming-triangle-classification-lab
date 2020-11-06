@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle 
   attr_accessor :x, :y, :z
   def initialize(x, y, z)
@@ -9,6 +10,7 @@ class Triangle
       elsif
          x <= 0 || y <= 0 ||z <= 0
         raise TriangleError
+      binding.pry
       end
 
   end
